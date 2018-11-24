@@ -16,9 +16,10 @@ class DatabaseConnection:
 
         try:
             self.connection = psycopg2.connect(
-                dbname='d9mmqc3ci3mjjg', user='neruvahaxedhtm
-', host='ec2-50-19-249-121.compute-1.amazonaws.com
-', password='cfe104854e991cfacd7761e5808b10e6f6f777d832cac89e02e0ce843e9bab32', port=5432
+                dbname='d9mmqc3ci3mjjg', user='neruvahaxedhtm',
+                host='ec2-50-19-249-121.compute-1.amazonaws.com',
+                password='cfe104854e991cfacd7761e5808b10e6f6f777d832cac89e02e0ce843e9bab32',
+                port=5432
             )
             self.connection.autocommit = True
             self.cur = self.connection.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
